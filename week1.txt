@@ -1,0 +1,98 @@
+Commands for WSL
+
+// Compiles the Hello.java file
+javac Hello.java
+
+//Write to Hello.java
+vim Hello.java
+
+//Run Hello.java
+java Hello.java
+
+//Enter jshell
+jshell
+
+//exit jshell
+/exit
+
+//Define a class
+class Circle {
+    double x;
+    double y;
+    double r;
+
+    //Define a function within a class
+
+}
+
+In Java classes:
+functions are known as methods
+The bundled data in the class are known as fields (or members, states, attributes)
+
+A class is a blueprint on how to make an object.
+Objects are instances of a class
+
+//Create a new object of class Circle:
+Circle c1 = new Circle()
+
+//reference variables:
+Circle c2 = c1
+c1.r = 20
+c2.r // will return 20
+
+c1.r = 10
+c2.r // will now return 10
+
+c2.r = 40
+c1.r // will now return 40
+
+
+If we have a Kotlin to JVM compiler, then we can write our code in Kotlin
+
+The type of a variable decides the computation that can be performed on a variable
+
+Type system: A set of rules about types of variables
+
+Static vs Dynamic Types:
+Dynamic: Source, js are dynamically typed. e.g.
+let x  = 4
+x = "5" //Types are not restricted
+
+Statically:
+We declare a type in the Source
+int x;
+x = 4
+x = "5" will return an error
+
+Primitive types in Java do not sharer the same values
+
+Subtypes and SuperType:
+A type T is a subtype of S (T <: S) if:
+-  A piece of code written for variables of type S can also safely be used on variables of type T
+
+S is a supertype of T
+
+byte <: short <: int <: long
+long <: float <: double
+char <: int
+
+Subtyping is reflexive and transitive
+
+Java widening type conversion: Java allows putting a value of type T into a variable of type S iff T <: S
+
+ e.g. 
+ byte b;
+ int i; 
+
+ i = b // possible
+ b = i // error: possible lossy conversion from int to byte
+
+
+Abstraction barriers:
+Abstraction: composite data types
+
+Encapsulation: bundle related variables and functions together 
+
+Circle class is a reference type. Anything that is not a 
+
+Reference variables only store the referemce to the value, and not the value itself
